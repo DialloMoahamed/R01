@@ -1,67 +1,67 @@
-# 🧮 Calculatrice en ligne de commande en C
+# 🧮 Menu Interactif en C
 
-Ce programme est une calculatrice simple écrite en langage C. Il permet à l'utilisateur d'effectuer des **opérations arithmétiques de base** : addition, soustraction, multiplication, division et modulo.
+Ce programme en langage C propose un menu interactif qui regroupe plusieurs outils algorithmiques simples, utiles pour l'apprentissage des bases en programmation : conditions, boucles, arithmétique, manipulation de répertoires, etc.
 
----
+Chaque fonctionnalité a été réalisée par un membre différent du groupe.
 
-## ⚙️ Fonctionnalités
+# 🔹 Fonctions proposées
+1. 🧠 Calculatrice — par Zabeirou Yacouba
+Permet d’effectuer des opérations arithmétiques simples :
+Addition, Soustraction, Multiplication, Division, Modulo.
 
-- Addition (`+`)
-- Soustraction (`-`)
-- Multiplication (`*`)
-- Division (`/`)
-- Modulo (`%`)
-- Vérification d'erreurs :
-  - Format invalide
-  - Division par zéro
-  - Tentative de soustraction avec zéro en minuend
+2. 🔢 Vérification de nombre premier — par Idrissa
+Vérifie si un entier est un nombre premier (divisible uniquement par 1 et lui-même).
 
----
+3. 🔁 Génération de la suite de Fibonacci — par Attahir
+Affiche les n premiers termes de la suite de Fibonacci :
+0 1 1 2 3 5 8 13 ...
 
-## 💻 Utilisation
+4. 🔀 Vérification pair/impair — par Bouba
+Indique si un entier est pair ou impair.
 
-### 🔧 Compilation
+5. 📁 Nombre de fichiers dans un répertoire — par Omar
+Demande le chemin d’un répertoire et affiche le nombre de fichiers réguliers qu’il contient (exclut les dossiers).
 
-* Utilisez `gcc` pour compiler le programme :
+0. 🚪 Quitter
+Quitte proprement le programme.
 
-- gcc -o calculatrice calculatrice.c 
-* ▶️ Exécution
-- ./calculatrice
-* Le programme demandera ensuite une opération à saisir sous la forme :
+# ⚙️ Compilation
+Utilisez gcc pour compiler le fichier source :
 
-- Entrez votre opération : 12 + 8
+gcc -o menu menu.c
+Cela crée un exécutable nommé menu.
 
+# 💻 Utilisation
+Lancez le programme :
 
-# 💡 Exemple de sortie
+./menu
+Choisissez une option du menu en entrant un chiffre.
 
-Entrez votre opération : 10 / 2
-La division entre 10 et 2 = 5
+# 📌 Exemple d’exécution
 
+$ ./menu
 
-# 🛑 Erreurs prises en compte
+--- MENU ---
+1. Calculatrice
+2. Vérification de nombre premier
+3. Génération de suite de Fibonacci
+4. Vérification de nombre paire ou impaire
+5. Vérification du nombre de fichier dans un repertoire
+0. Quitter
+Votre choix : 3
 
-* Division par zéro :
+--- Génération de suite de Fibonacci ---
+Entrez le nombre de termes :
+6
+Les 6 premiers termes de la série de Fibonacci sont :
+0 1 1 2 3 5
 
-Entrez votre opération : 10 / 0
-Erreur : Division par 0 imprudent.
+👥 Auteurs
 
-* Format incorrect :
+Fonction	                                                                              Auteur
 
-Entrez votre opération : dix + cinq
-Erreur : format invalide.
-
-* Soustraction avec 0 en premier opérande :
-
-Entrez votre opération : 0 - 5
-On ne peut pas soustraire un nombre de 0.
-
-
-# 📁 Fichier source
-calculatrice.c : code source principal de l'application.
-
-# 🛠 Dépendances
-- stdio.h
-
-- stdlib.h
-
-- math.h
+Calculatrice	                                                                      Zabeirou Yacouba
+Nombre premier	                                                                        Idrissa
+Suite de Fibonacci	                                                                    Attahir
+Pair ou impair	                                                                         Bouba
+Nombre de fichiers	                                                                      Omar
